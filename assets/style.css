@@ -80,6 +80,11 @@ body {
 }
 
 
+.divider {
+  border-left: 6px solid white;
+  height: 500px;}
+
+
 .card {
   color: #0e1116;
 }

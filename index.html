@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>George Escobar</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <header id="top-of-page">
+      <nav class="navbar navbar-expand-lg bg-none">
+        <div class="container-fluid">
+          <a class="navbar-brand"
+            ><img class="logo" src="./assets/img/logo.png" alt="logo"
+          /></a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="text-dark nav-link active"
+                aria-current="page"
+                href="#welcome-page"
+                >1. Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-dark nav-link active"
+                aria-current="page"
+                href="#who-am-i"
+                >2. About Me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-dark nav-link active"
+                aria-current="page"
+                href="#sample-work"
+                >3. Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="text-dark nav-link active"
+                aria-current="page"
+                href="#contact-me"
+                >4. Contact Me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- home  -->
+    <div class="home">
+      <h1 id="hello">Hello, my name is</h1>
+      <h2 id="name">George Escobar</h2>
+      <h3 id="intro-bio">
+        I am a fullstack developer based out of Dallas, TX.
+      </h3>
+    </div>
+
+    <!-- about me  -->
+    <div class="about-me">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-4">
+            <div class="about-content">
+              <h1>About Me</h1>
+              <p class="about-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                error aliquam nesciunt illum minima, deserunt cumque consectetur
+                blanditiis tempore beatae.
+              </p>
+
+              <p class="about-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                error aliquam nesciunt illum minima, deserunt cumque consectetur
+                blanditiis tempore beatae.
+              </p>
+
+              <p class="about-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                error aliquam nesciunt illum minima, deserunt cumque consectetur
+                blanditiis tempore beatae.
+              </p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="about-img">
+              <img class="selfie" src="./assets/img/cabo.jpg" alt="logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- projects -->
+    <div class="projects">
+      <!-- featured projects -->
+      <div class="featured-projects">
+        <h1>Featured Projects</h1>
+        <p>Check out some of my favorite projects!</p>
+        <div
+          id="carouselExampleInterval"
+          class="slideshow carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="./assets/img/code-quiz.png"
+                class="project-imgs d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="./assets/img/console-log.png"
+                class="project-imgs d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/img/titan-tickets.png"
+                class="project-imgs d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- other projects  -->
+      <div class="remainding-projects">
+        <div class="rem-proj-title">
+          <h1>Other Projects</h1>
+          <p>Want to see more? These are more of my favorite!</p>
+          <a class="archive-link" href="./assets/archives.html"
+            >Full Archive Here</a
+          >
+        </div>
+
+        <div class="project-cards">
+          <div class="d-flex justify-content-around">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Other Projects</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Other Projects</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Other Projects</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-around">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Other Projects</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Other Projects</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Other Projects</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-around">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Other Projects</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Other Projects</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Other Projects</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+          </div>
+          <!-- show more/less button goes here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- contact me  -->
+    <div class="d-flex justify-content-evenly">
+      <div>
+        <h3>Feel Free To Reach Out!</h3>
+        <a href="mailto:geo.escobar214@gmail.com" target="_blank">Email Me!</a>
+      </div>
+      <div>
+        <a href="#" target="_blank">GitHub</a>
+        <a href="#" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <img class="logo" src="./assets/img/logo.png" alt="logo" />
+      <!-- <p>&#169 2022 Made by George Escobar</p> -->
+    </div>
+
+    <!-- script links -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

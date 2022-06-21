@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0e1116;
+  color: #ded6d6;
+}
+
+.home {
+  padding: 20px 20px;
+  margin: 15% 10%;
+}
+
+#hello {
+  font-size: medium;
+}
+
+#name {
+  font-size: 5em;
+}
+
+#intro-bio {
+  font-size: 2em;
+}
+
+.about-me {
+  color: #41d3bd;
+  margin: 15% 10%;
+}
+
+.logo {
+  height: 75px;
+  width: 75px;
+  cursor: pointer;
+}
+
+.selfie {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+
+.slideshow {
+  height: 600px;
+  width: 600px;
+}
+
+.project-imgs {
+  width: 640px;
+  height: 360px;
+}
+
+.about-content {
+  line-height: 25px;
+  word-wrap: normal;
+}
+
+.about-content h1 {
+  font-size: 5em;
+}
+
+.projects {
+  padding: 20px 20px;
+  margin: 15% 10%;
+}
+
+.featured-projects {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.card {
+  color: #0e1116;
+}

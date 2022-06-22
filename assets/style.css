@@ -105,7 +105,8 @@ body {
 }
 
 .resume {
-  margin: 5% 5%;
+  margin: 15% 10%;
+  padding: 10%;
 }
 
 .fade-in {
@@ -125,12 +126,24 @@ body {
   transform: translateX(50%);
 }
 
-.from-left, .from-right {
+.from-left,
+.from-right {
   transition: opacity 250ms ease-in transfrom 400ms ease-in;
   opacity: 0;
 }
 
-.from-left.appear, .from-right.appear {
+.from-left.appear,
+.from-right.appear {
   transform: translateX(0);
   opacity: 1;
+}
+
+.parallax {
+  background-color: azure;
+  background-image: url("https://www.minimaldesksetups.com/wp-content/uploads/2020/09/Featureimage.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

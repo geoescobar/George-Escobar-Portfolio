@@ -20,3 +20,5 @@ fetch(requestUrl)
       divContainer.appendChild(divElement);
     }
   });
+
+feather.replace();

@@ -11,6 +11,14 @@ body {
   overflow-x: none;
 }
 
+.navbar {
+  transition: transform 0.2s;
+}
+
+.nav--hidden {
+  transform: translateY(calc(-1 * var(--nav-height))) !important;
+}
+
 .home {
   padding: 20px 20px;
   margin: 15% 10%;
@@ -147,12 +155,3 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
-/* .more-cards {
-  display: none;
-}
-
-.project-cards.show-more .more-cards {
-  display: inline;
-} */

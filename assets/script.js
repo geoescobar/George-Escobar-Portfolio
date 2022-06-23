@@ -80,5 +80,23 @@ sliders.forEach((slider) => {
   appearOnScroll.observe(slider);
 });
 
-// ======================= scroll fade effects =======================
+// ======================= show more button =======================
+const showMoreBtn = document.querySelector(".more-less-btn");
+const extraCards = document.querySelector(".more-cards");
 
+extraCards.style.display = "none";
+
+showMoreBtn.addEventListener("click", () => {
+  extraCards.style.display = "block";
+
+  if (showMoreBtn.innerText === "Show More") {
+    showMoreBtn.innerText = "Show Less";
+    showMoreBtn.addEventListener("click", () => {
+      extraCards.style.display = "none";
+      showMoreBtn.innerText = "Show More";
+    });
+  } else {
+    showMoreBtn.innerText = "Show More";
+  }
+  return;
+});

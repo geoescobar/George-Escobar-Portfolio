@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- bootstrap link -->
     <link
+      href="https://api.fontshare.com/v2/css?f[]=chillax@500,300,400,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
@@ -60,13 +65,16 @@
       </nav>
     </header>
     <!-- home  -->
-    <div id="home" class="home">
-      <h1 id="hello">Hello, my name is</h1>
-      <h2 id="name">George Escobar</h2>
-      <h3 id="intro-bio">
-        I am a fullstack developer based out of Dallas, TX.
-      </h3>
-    </div>
+    <section class="home-wrapper">
+      <div class="circle"></div>
+      <div id="home" class="home">
+        <h1 id="hello">Hello, my name is</h1>
+        <h2 id="name">George Escobar</h2>
+        <h3 id="intro-bio">
+          I am a fullstack developer based out of Dallas, TX.
+        </h3>
+      </div>
+    </section>
 
     <!-- about me  -->
     <div id="about-me" class="about-me">
@@ -270,10 +278,12 @@
     <!-- resume goes here -->
     <div class="parallax">
       <div class="resume d-flex justify-content-center fade-in">
-        <i data-feather="external-link"></i>
-        <a href="./assets/img/resume.pdf" target="_blank" class="resume-link"
-          >Resume</a
-        >
+        <div class="resume-wrapper">
+          <i data-feather="external-link"></i>
+          <a href="./assets/img/resume.pdf" target="_blank" class="resume-link"
+            >Resume</a
+          >
+        </div>
       </div>
     </div>
 
@@ -282,7 +292,7 @@
       <div class="d-flex justify-content-evenly">
         <div>
           <h3>Feel Free To Reach Out!</h3>
-          <a href="mailto:geo.escobar214@gmail.com" target="_blank"
+          <a href="mailto:geo.escobar214@gmail.com" class="email" target="_blank"
             >Email Me!</a
           >
         </div>
@@ -294,7 +304,11 @@
             </li>
             <li class="socials">
               <i data-feather="github"></i
-              ><a href="https://github.com/geoescobar" target="_blank">
+              ><a
+                href="https://github.com/geoescobar"
+                class="social-links"
+                target="_blank"
+              >
                 Github</a
               >
             </li>
@@ -302,8 +316,10 @@
               <i data-feather="linkedin"></i
               ><a
                 href="https://www.linkedin.com/in/george-escobar/"
+                class="social-links"
                 target="_blank"
-                >LinkedIn</a
+              >
+                LinkedIn</a
               >
             </li>
           </ul>

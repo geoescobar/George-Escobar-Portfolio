@@ -102,16 +102,27 @@ showMoreBtn.addEventListener("click", () => {
 });
 
 // ======================= navbar =======================
-  const nav = document.querySelector(".navbar");
-  let lastScrollY = window.scrollY;
+const nav = document.querySelector(".navbar");
+let lastScrollY = window.scrollY;
 
-  window.addEventListener("scroll", () => {
-    if (lastScrollY < window.scrollY) {
-      nav.classList.add("nav--hidden");
-    } else {
-      nav.classList.remove("nav--hidden");
-    }
+window.addEventListener("scroll", () => {
+  if (lastScrollY < window.scrollY) {
+    nav.classList.add("nav--hidden");
+  } else {
+    nav.classList.remove("nav--hidden");
+  }
 
-    lastScrollY = window.scrollY;
-  });
+  lastScrollY = window.scrollY;
+});
+
+// ======================= highlight current tab =======================
+const current = 0;
+for (var i = 0; i < document.links.length; i++) {
+  if (document.links[i].href === document.URL) {
+    current = i;
+  }
+}
+document.links[current].className = "current";
+
+// ======================= page loader animation =======================
 

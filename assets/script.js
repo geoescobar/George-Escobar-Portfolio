@@ -116,13 +116,20 @@ window.addEventListener("scroll", () => {
 });
 
 // ======================= highlight current tab =======================
-const current = 0;
-for (var i = 0; i < document.links.length; i++) {
-  if (document.links[i].href === document.URL) {
-    current = i;
+window.addEventListener("scroll", () => {
+  const sections = document.querySelectorAll("section");
+  for (let i = 0; i < sections.length; i++) {
+    const height = sections[i].offsetHeight;
+    const start = sections[i].offsetTop;
+    const end = start + height;
+    console.log(sections[i], `${start}px-${end}`);
+    console.log("offset height" + sections[i].offsetHeight);
+    console.log("offset top" + sections[i].offsetTop);
+    console.log("offset y" + window.pageYOffset);
+    if (start >= window.pageYOffset && window.pageYOffset <= end) {
+      console.log("you are here", sections[i]);
+    }
   }
-}
-document.links[current].className = "current";
+});
 
 // ======================= page loader animation =======================
-

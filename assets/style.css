@@ -146,16 +146,18 @@ body {
 }
 
 .from-left {
+  grid-column: 2 / 3;
   transform: translateX(-50%);
 }
 
 .from-right {
+  grid-column: 3 / 4;
   transform: translateX(50%);
 }
 
 .from-left,
 .from-right {
-  transition: opacity 250ms ease-in transfrom 400ms ease-in;
+  transition: opacity 250ms ease-in, transfrom 400ms ease-in;
   opacity: 0;
 }
 
@@ -207,3 +209,23 @@ body {
   text-decoration: underline wavy;
   padding: 20px 25px;
 }
+
+.navbar {
+  position: fixed;
+  transition: all 0.2s ease-in;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom right, #141e30, #243b55);
+  z-index: 50;
+}
+
+.nav--hidden {
+  top: -160px;
+}
+
+.more-less-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+

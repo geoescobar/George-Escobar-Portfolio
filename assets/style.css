@@ -7,13 +7,13 @@
 
 body {
   background-image: linear-gradient(to bottom right, #141e30, #243b55);
-  color: #ded6d6;
+  color: #F4FFFD;
   overflow-x: none;
   font-family: "Chillax", sans-serif;
 }
 
 .current {
-  color: #41d3bd;
+  color: #41d3bd !important;
   text-decoration: none;
 }
 
@@ -115,7 +115,7 @@ body {
 }
 
 .resume {
-  margin: 15% 10%;
+  margin: 15% 10% 0;
   padding: 10%;
 }
 
@@ -169,7 +169,7 @@ body {
 
 .parallax {
   background-color: azure;
-  background-image: url("https://www.minimaldesksetups.com/wp-content/uploads/2020/09/Featureimage.jpg");
+  background-image: url("./img/pexels-danny-meneses-943096.jpg");
 
   height: 100%;
   background-attachment: fixed;
@@ -216,7 +216,8 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-image: linear-gradient(to bottom right, #141e30, #243b55);
+  background-color: #011936;
+  /* background-image: linear-gradient(to bottom right, #141e30, #243b55); */
   z-index: 50;
 }
 
@@ -227,5 +228,9 @@ body {
 .more-less-btn {
   padding: 10px 20px;
   border-radius: 10px;
+}
+
+.contact-me {
+  padding-top: 15%;
 }
 

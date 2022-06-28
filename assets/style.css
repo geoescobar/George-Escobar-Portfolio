@@ -7,9 +7,9 @@
 
 body {
   background-image: linear-gradient(to bottom right, #141e30, #243b55);
-  color: #F4FFFD;
+  color: #f4fffd;
   overflow-x: none;
-  font-family: "Chillax", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .current {
@@ -21,9 +21,16 @@ body {
   color: #ded6d6;
 }
 
+.home-wrapper {
+  background-image: url("./img/mockup.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 7%;
+}
+
 .home {
   padding: 20px 20px;
-  margin: 10% 10%;
+  margin: 10% 10% 0;
   margin-bottom: 25%;
 }
 
@@ -40,7 +47,9 @@ body {
 }
 
 .about-me {
-  margin: 15% 10%;
+  /* margin: 15% 10%; */
+  padding: 7%;
+  color: #f4fffd;
 }
 
 .logo {
@@ -167,7 +176,18 @@ body {
   opacity: 1;
 }
 
-.parallax {
+.parallax-one {
+  background-color: azure;
+  background-image: url("./img/mockup.png");
+
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-two {
   background-color: azure;
   background-image: url("./img/pexels-danny-meneses-943096.jpg");
 
@@ -216,8 +236,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #011936;
-  /* background-image: linear-gradient(to bottom right, #141e30, #243b55); */
+  background-image: linear-gradient(to bottom right, #141e30, #243b55);
   z-index: 50;
 }
 
@@ -234,3 +253,7 @@ body {
   padding-top: 15%;
 }
 
+.list-container {
+  list-style: none;
+  font-size: 1.5em;
+}

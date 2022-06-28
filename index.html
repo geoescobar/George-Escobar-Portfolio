@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- bootstrap link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://api.fontshare.com/v2/css?f[]=chillax@500,300,400,200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
 
     <link
@@ -33,7 +39,7 @@
                 id="nav-home"
                 class="text-light nav-link active"
                 aria-current="page"
-                href="#home"
+                href="#navbar"
                 >Home</a
               >
             </li>
@@ -69,13 +75,13 @@
       </nav>
     </header>
     <!-- home  -->
-    <section data-nav-id="nav-home" class="home-wrapper">
+    <section data-nav-id="nav-home" class="home-wrapper parallax-one">
       <div class="circle"></div>
       <div id="home" class="home">
         <h1 id="hello">Hello, my name is</h1>
         <h2 id="name">George Escobar</h2>
         <h3 id="intro-bio">
-          I am a fullstack developer based out of Dallas, TX.
+          Fullstack Developer with a focus in Front-End Development
         </h3>
       </div>
     </section>
@@ -84,25 +90,32 @@
     <section id="about-me" data-nav-id="nav-about-me" class="about-me">
       <div class="container">
         <div class="row justify-content-between">
-          <div class="col-4 fade-in">
+          <div class="col-6 fade-in">
             <div class="about-content">
               <h1 class="slide-in from-left">About Me</h1>
               <p class="about-content slide-in from-left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                error aliquam nesciunt illum minima, deserunt cumque consectetur
-                blanditiis tempore beatae.
+                I am 25 years old from Dallas, TX. I enjoy spending time with my
+                friends and family as well as going out with my two dogs! I have
+                a background in customer service and am recognized as proactive,
+                resourceful, and persistent problem-solver. Excellent
+                communicator with effective client relationship-building skills
               </p>
 
               <p class="about-content slide-in from-left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                error aliquam nesciunt illum minima, deserunt cumque consectetur
-                blanditiis tempore beatae.
+                I am a graduate of the Fullstack Development Bootcamp at
+                Southern Methodist University. I enjoy creating immersive
+                front-end code that engages the user in exploring the site to
+                it's fullest.
               </p>
 
               <p class="about-content slide-in from-left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                error aliquam nesciunt illum minima, deserunt cumque consectetur
-                blanditiis tempore beatae.
+                While front-end development is what I am interested in I am a
+                proficient full stack developer.
+              </p>
+
+              <p class="about-content slide-in from-left">
+                Below are the languages, markups, and frameworks I have
+                experience in:
               </p>
             </div>
           </div>
@@ -111,6 +124,58 @@
               <img class="selfie" src="./assets/img/cabo.jpg" alt="logo" />
             </div>
           </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-evenly">
+        <div class="languages-list fade-in">
+          <ul class="list-container">
+            <li class="languages">
+              <span class="icons"><i class="devicon-html5-plain"></i> </span
+              >HTML
+            </li>
+            <li class="languages">
+              <span class="icons"><i class="devicon-css3-plain"></i> </span>CSS
+            </li>
+            <li class="languages">
+              <span class="icons"
+                ><i class="devicon-javascript-plain"></i> </span
+              >JavaScript (ES6)
+            </li>
+            <li class="languages">
+              <span class="icons"><i class="devicon-react-original"></i> </span
+              >React.Js
+            </li>
+            <li class="languages">
+              <span class="icons"><i class="devicon-nodejs-plain"></i> </span
+              >Node.Js
+            </li>
+          </ul>
+        </div>
+        <div class="languages-list fade-in">
+          <ul class="list-container">
+            <li class="languages">
+              <span class="icons"><i class="devicon-bootstrap-plain"></i> </span
+              >Bootstrap
+            </li>
+            <li class="languages">
+              <span class="icons"
+                ><i class="devicon-express-original"></i> </span
+              >Express.Js
+            </li>
+            <li class="languages">
+              <span class="icons"
+                ><i class="devicon-mysql-plain-wordmark"></i> </span
+              >mySQL
+            </li>
+            <li class="languages">
+              <span class="icons"><i class="devicon-mongodb-plain"></i> </span
+              >MongoDB
+            </li>
+            <li class="languages">
+              <span class="icons"><i class="devicon-sequelize-plain"></i> </span
+              >Sequalize
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -294,7 +359,7 @@
     </section>
 
     <!-- resume goes here -->
-    <div class="parallax">
+    <div class="parallax-two">
       <div class="resume d-flex justify-content-center fade-in">
         <div class="resume-wrapper">
           <i data-feather="external-link"></i>

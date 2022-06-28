@@ -37,7 +37,7 @@
             <li class="nav-item">
               <a
                 id="nav-home"
-                class="text-light nav-link active"
+                class="text-light nav-link active underline"
                 aria-current="page"
                 href="#navbar"
                 >Home</a
@@ -46,7 +46,7 @@
             <li class="nav-item">
               <a
                 id="nav-about-me"
-                class="text-light nav-link active"
+                class="text-light nav-link active underline"
                 aria-current="page"
                 href="#about-me"
                 >About Me</a
@@ -55,7 +55,7 @@
             <li class="nav-item">
               <a
                 id="nav-projects"
-                class="text-light nav-link active"
+                class="text-light nav-link active underline"
                 aria-current="page"
                 href="#projects"
                 >Projects</a
@@ -64,7 +64,7 @@
             <li class="nav-item">
               <a
                 id="nav-contact-me"
-                class="text-light nav-link active"
+                class="text-light nav-link active underline"
                 aria-current="page"
                 href="#contact-me"
                 >Contact Me</a
@@ -118,64 +118,72 @@
                 experience in:
               </p>
             </div>
+            <div class="d-flex justify-content-start">
+              <div class="languages-list fade-in">
+                <ul class="list-container">
+                  <li class="languages">
+                    <span class="icons"
+                      ><i class="devicon-html5-plain"></i> </span
+                    >HTML
+                  </li>
+                  <li class="languages">
+                    <span class="icons"
+                      ><i class="devicon-css3-plain"></i> </span
+                    >CSS
+                  </li>
+                  <li class="languages">
+                    <span class="icons"
+                      ><i class="devicon-javascript-plain"></i> </span
+                    >JavaScript (ES6)
+                  </li>
+                  <li class="languages">
+                    <span class="icons"
+                      ><i class="devicon-react-original"></i> </span
+                    >React.Js
+                  </li>
+                  <li class="languages">
+                    <span class="icons"
+                      ><i class="devicon-nodejs-plain"></i> </span
+                    >Node.Js
+                  </li>
+                </ul>
+              </div>
+              <div class="languages-list fade-in">
+                <ul class="list-container">
+                  <li class="languages">
+                    <span class="icons"
+                      ><i class="devicon-bootstrap-plain"></i> </span
+                    >Bootstrap
+                  </li>
+                  <li class="languages">
+                    <span class="icons"
+                      ><i class="devicon-express-original"></i> </span
+                    >Express.Js
+                  </li>
+                  <li class="languages">
+                    <span class="icons"
+                      ><i class="devicon-mysql-plain-wordmark"></i> </span
+                    >mySQL
+                  </li>
+                  <li class="languages">
+                    <span class="icons"
+                      ><i class="devicon-mongodb-plain"></i> </span
+                    >MongoDB
+                  </li>
+                  <li class="languages">
+                    <span class="icons"
+                      ><i class="devicon-sequelize-plain"></i> </span
+                    >Sequalize
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="col-4 fade-in">
             <div class="about-img slide-in from-right">
               <img class="selfie" src="./assets/img/cabo.jpg" alt="logo" />
             </div>
           </div>
-        </div>
-      </div>
-      <div class="d-flex justify-content-evenly">
-        <div class="languages-list fade-in">
-          <ul class="list-container">
-            <li class="languages">
-              <span class="icons"><i class="devicon-html5-plain"></i> </span
-              >HTML
-            </li>
-            <li class="languages">
-              <span class="icons"><i class="devicon-css3-plain"></i> </span>CSS
-            </li>
-            <li class="languages">
-              <span class="icons"
-                ><i class="devicon-javascript-plain"></i> </span
-              >JavaScript (ES6)
-            </li>
-            <li class="languages">
-              <span class="icons"><i class="devicon-react-original"></i> </span
-              >React.Js
-            </li>
-            <li class="languages">
-              <span class="icons"><i class="devicon-nodejs-plain"></i> </span
-              >Node.Js
-            </li>
-          </ul>
-        </div>
-        <div class="languages-list fade-in">
-          <ul class="list-container">
-            <li class="languages">
-              <span class="icons"><i class="devicon-bootstrap-plain"></i> </span
-              >Bootstrap
-            </li>
-            <li class="languages">
-              <span class="icons"
-                ><i class="devicon-express-original"></i> </span
-              >Express.Js
-            </li>
-            <li class="languages">
-              <span class="icons"
-                ><i class="devicon-mysql-plain-wordmark"></i> </span
-              >mySQL
-            </li>
-            <li class="languages">
-              <span class="icons"><i class="devicon-mongodb-plain"></i> </span
-              >MongoDB
-            </li>
-            <li class="languages">
-              <span class="icons"><i class="devicon-sequelize-plain"></i> </span
-              >Sequalize
-            </li>
-          </ul>
         </div>
       </div>
     </section>
@@ -248,8 +256,10 @@
         <div class="rem-proj-title">
           <h1>Other Projects</h1>
           <p>Want to see more? These are more of my favorite!</p>
-          <i data-feather="archive"></i
-          ><a class="archive-link" href="./archives.html">Full Archive Here</a>
+          <i data-feather="archive"></i>
+          <a class="archive-link underline" href="./archives.html">
+            Full Archive Here</a
+          >
         </div>
 
         <div class="project-cards">
@@ -259,14 +269,22 @@
               style="width: 18rem"
             >
               <div class="card-body">
-                <h5 class="card-title">Other Projects1</h5>
+                <a
+                  href="https://github.com/geoescobar/Weather-Dashboard"
+                  target="_blank"
+                  class="card-title underline"
+                  >Weather Dashboard</a
+                >
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Fetching data from an API to render live current and future
+                  weather anywhere in the world. Allows the user to search and
+                  keep track of their history as well.
                 </p>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Javascript</p>
+                <p class="card-icon">
+                  <i class="devicon-html5-plain"></i>
+                  <i class="devicon-css3-plain"></i>
+                  <i class="devicon-javascript-plain"></i>
+                </p>
               </div>
             </div>
             <div
@@ -274,14 +292,22 @@
               style="width: 18rem"
             >
               <div class="card-body">
-                <h5 class="card-title">Other Projects2</h5>
+                <a
+                  href="https://github.com/geoescobar/Employee-Tracker-GE"
+                  target="_blank"
+                  class="card-title underline"
+                  >Employee Tracker</a
+                >
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Back end terminal based application allowing to manage company
+                  staff, roles, and salary securely storing it into a database.
                 </p>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Javascript</p>
+
+                <p class="card-icon">
+                  <i class="devicon-nodejs-plain"></i>
+                  <i class="devicon-mysql-plain-wordmark"></i>
+                  <i class="devicon-javascript-plain"></i>
+                </p>
               </div>
             </div>
             <div
@@ -289,14 +315,21 @@
               style="width: 18rem"
             >
               <div class="card-body">
-                <h5 class="card-title">Other Projects3 - has a shadow</h5>
+                <a
+                  href="https://github.com/geoescobar/Feedback-App"
+                  target="_blank"
+                  class="card-title underline"
+                  >Feedback App</a
+                >
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  React based project allowing the user to add a rating and
+                  review to any experience. Applicable towards any business.
                 </p>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Javascript</p>
+                <p class="card-icon">
+                  <i class="devicon-react-original"></i>
+                  <i class="devicon-css3-plain"></i>
+                  <i class="devicon-javascript-plain"></i>
+                </p>
               </div>
             </div>
           </div>
@@ -307,14 +340,23 @@
                 style="width: 18rem"
               >
                 <div class="card-body">
-                  <h5 class="card-title">Other Projects1</h5>
+                  <a
+                    href="https://github.com/geoescobar/tech-blog-GE"
+                    target="_blank"
+                    class="card-title underline"
+                    >Tech Blog</a
+                  >
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    Full stack application allowing users to securely sign up
+                    and join a tech blog community. Allows them to also delete
+                    and edit their own posts.
                   </p>
-                  <p>HTML</p>
-                  <p>CSS</p>
-                  <p>Javascript</p>
+
+                  <p class="card-icon">
+                    <i class="devicon-nodejs-plain"></i>
+                    <i class="devicon-express-original"></i>
+                    <i class="devicon-mysql-plain-wordmark"></i>
+                  </p>
                 </div>
               </div>
               <div
@@ -322,14 +364,22 @@
                 style="width: 18rem"
               >
                 <div class="card-body">
-                  <h5 class="card-title">Other Projects2</h5>
+                  <a
+                    href="https://github.com/geoescobar/E-Commerce-Backend-GE"
+                    target="_blank"
+                    class="card-title underline"
+                    >E-Commerce Back End</a
+                  >
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    Configure a working Express.js API to use Sequelize to
+                    interact with a MySQL database.
                   </p>
-                  <p>HTML</p>
-                  <p>CSS</p>
-                  <p>Javascript</p>
+              
+                  <p class="card-icon">
+                    <i class="devicon-nodejs-plain"></i>
+                    <i class="devicon-sequelize-plain"></i>
+                    <i class="devicon-mysql-plain-wordmark"></i>
+                  </p>
                 </div>
               </div>
               <div
@@ -337,14 +387,23 @@
                 style="width: 18rem"
               >
                 <div class="card-body">
-                  <h5 class="card-title">Other Projects3 - has a shadow</h5>
+                  <a
+                    href="https://github.com/geoescobar/George-Escobar-Portfolio"
+                    target="_blank"
+                    class="card-title underline"
+                    >Portfolio</a
+                  >
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    Demonstrating the skillset learned throughout the cohort as
+                    well as independent creativity in developing a user friendly
+                    experience.
                   </p>
-                  <p>HTML</p>
-                  <p>CSS</p>
-                  <p>Javascript</p>
+
+                  <p class="card-icon">
+                    <i class="devicon-html5-plain"></i>
+                    <i class="devicon-css3-plain"></i>
+                    <i class="devicon-javascript-plain"></i>
+                  </p>
                 </div>
               </div>
             </div>
@@ -363,7 +422,10 @@
       <div class="resume d-flex justify-content-center fade-in">
         <div class="resume-wrapper">
           <i data-feather="external-link"></i>
-          <a href="./assets/img/resume.pdf" target="_blank" class="resume-link"
+          <a
+            href="./assets/img/resume.pdf"
+            target="_blank"
+            class="resume-link underline"
             >Resume</a
           >
         </div>
@@ -378,7 +440,7 @@
     >
       <div class="container">
         <div class="d-flex justify-content-evenly">
-          <div>
+          <div class="email-contact">
             <h3>Feel Free To Reach Out!</h3>
             <a
               href="mailto:geo.escobar214@gmail.com"
@@ -388,8 +450,8 @@
             >
           </div>
 
-          <div class="divider"></div>
-          <div>
+          <!-- <div class="divider"></div> -->
+          <div class="contact-info">
             <ul>
               <li class="socials">
                 <p><i data-feather="map-pin"></i> Dallas, TX</p>
@@ -398,7 +460,7 @@
                 <i data-feather="github"></i
                 ><a
                   href="https://github.com/geoescobar"
-                  class="social-links"
+                  class="social-links underline"
                   target="_blank"
                 >
                   Github</a
@@ -408,7 +470,7 @@
                 <i data-feather="linkedin"></i
                 ><a
                   href="https://www.linkedin.com/in/george-escobar/"
-                  class="social-links"
+                  class="social-links underline"
                   target="_blank"
                 >
                   LinkedIn</a

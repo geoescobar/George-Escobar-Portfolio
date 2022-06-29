@@ -87,15 +87,11 @@ if (window.location.href.endsWith("/archives.html")) {
   extraCards.style.display = "none";
 
   showMoreBtn.addEventListener("click", () => {
-    extraCards.style.display = "block";
-
     if (showMoreBtn.innerText === "Show More") {
+      extraCards.style.display = "block";
       showMoreBtn.innerText = "Show Less";
-      showMoreBtn.addEventListener("click", () => {
-        extraCards.style.display = "none";
-        showMoreBtn.innerText = "Show More";
-      });
     } else {
+      extraCards.style.display = "none";
       showMoreBtn.innerText = "Show More";
     }
     return;
@@ -146,4 +142,8 @@ if (window.location.href.endsWith("/archives.html")) {
   window.addEventListener("scroll", debounce(currentTab, 100));
   currentTab();
 }
-// ======================= page loader animation =======================
+// ======================= switch to dark mode =======================
+const darkMode = () => {
+  const element = document.body;
+  element.classList.toggle("dark-mode");
+};

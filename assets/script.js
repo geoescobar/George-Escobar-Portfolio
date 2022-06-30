@@ -146,4 +146,7 @@ if (window.location.href.endsWith("/archives.html")) {
 const darkMode = () => {
   const element = document.body;
   element.classList.toggle("dark-mode");
+
+  const cardColor = document.querySelector(".cards");
+  cardColor.classList.add("dark-mode");
 };

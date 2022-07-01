@@ -13,36 +13,44 @@ Check out my portfolio! On there you will learn more about me and check out some
 ## Table of Contents:
 
 - [License](#license)
-- [Description](#description)
 - [Links](#links)
-- [Installation](#installation)
+- [About Me](#about-me)
 - [Questions](#questions)
 
 ---
 
 <!-- Add desktop & mobile version mockup -->
 
-Placeholder
+## Links
+
+### [Demo](Github.com/geoescobar)
+
+![Img](./assets/img/mockup.jpg)
+
+### [Github Repo](Github.com/geoescobar)
 
 ---
 
+## About Me
+
   <!-- Add about me section here -->
 
-Placeholder
+- I am 25 years old from Dallas, TX. I enjoy spending time with my friends and family as well as going out with my two dogs! I have a background in customer service and am recognized as proactive, resourceful, and persistent problem-solver. Excellent communicator with effective client relationship-building skills
+
+- I am a graduate of the Fullstack Development Bootcamp at Southern Methodist University. I enjoy creating immersive front-end code that engages the user in exploring the site to it's fullest.
 
 ---
 
   <!-- Add languages learned here -->
 
-Placeholder
+## Skillset pertains of:
 
----
-
-## Links
-
-#### GitHub Repo:
-
-- [Github Repo](Github.com/geoescobar)
+| ES6 JavaScript |  React.Js  |
+| :------------: | :--------: |
+|      HTML      | Express.Js |
+|      CSS       | Sequalize  |
+|     mySQL      |  MongoDb   |
+|    Mongoose    | Bootstrap  |
 
 ---
 

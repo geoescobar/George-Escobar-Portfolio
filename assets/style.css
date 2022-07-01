@@ -121,6 +121,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: opacity 0.1s;
+  margin-bottom: 10%;
 }
 
 .img-fluid {
@@ -256,8 +257,6 @@ input:checked + .slider:before {
 
 .parallax-one {
   background-color: azure;
-  background-image: url("./img/mockup.png");
-
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -267,7 +266,7 @@ input:checked + .slider:before {
 
 .parallax-two {
   background-color: azure;
-  background-image: url("./img/pexels-danny-meneses-943096.jpg");
+  background-image: url("./img/code-example.jpg");
 
   height: 100%;
   background-attachment: fixed;
@@ -315,7 +314,6 @@ input:checked + .slider:before {
 
 .more-less-btn:hover {
   background-color: darkgrey;
-  cursor: pointer;
 }
 
 .contact-me {
@@ -389,4 +387,10 @@ input:checked + .slider:before {
 .card-icon {
   font-size: 3.5em;
   white-space: nowrap;
+}
+
+
+.proj-img {
+  height: 50%;
+  width: 50%;
 }

@@ -23,11 +23,11 @@ Check out my portfolio! On there you will learn more about me and check out some
 
 ## Links
 
-### [Demo](Github.com/geoescobar)
+### [Demo](https://geoescobar.github.io/George-Escobar-Portfolio/)
 
 ![Img](./assets/img/mockup.jpg)
 
-### [Github Repo](Github.com/geoescobar)
+### [Github Repo](https://github.com/geoescobar/George-Escobar-Portfolio)
 
 ---
 
